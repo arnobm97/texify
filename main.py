@@ -20,5 +20,3 @@ for b in boxes.splitlines():
 
 cv2.imshow('Result',img)
 cv2.waitKey(0)
-
-print("git add successful")
