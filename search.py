@@ -1,8 +1,16 @@
 import cv2
 import pytesseract
+import os
 
+targetfile = input('Enter the filename accurately with extension: ')
+if os.path.isfile(targetfile) == True:
+    print("found")
+else:
+    print("There are no files named", targetfile , "in this directory")
+    print("Please enter a valid file with extension. e.g texify.png")
+    quit()
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-img = cv2.imread('testing.png')
+img = cv2.imread(targetfile)
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 R = input("Type 1 for Letter and 2 for Word : ")
