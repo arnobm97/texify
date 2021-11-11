@@ -37,7 +37,7 @@ if R=="1":
             result.append(search[i])
             count += 1
 
-    print(result)
+    #print(result)
     print("Your desired letter which is", Q, "is found", count, "times")
 
     for b in boxes.splitlines():
