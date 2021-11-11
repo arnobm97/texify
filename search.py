@@ -45,7 +45,6 @@ if R=="1":
 elif R=="2":
     print ("Word")
     L = input("Which word do you want to find? (Case Sensitive) : ")
-    # Detecting Words
 
     hImg, wImg, _ = img.shape
     boxes = pytesseract.image_to_data(img)
